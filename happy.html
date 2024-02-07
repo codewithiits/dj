@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f2bbd2c7d7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <h1>Students Registration<span>Form</span></h1>
+  <form>
+    <div class="input-group">
+      <label for="name"><i class="fa-solid fa-user"></i> Your name</label>
+      <input type="text" id="name" placeholder=" Your Name...">
+    </div>
+
+    <div class="input-group">
+      <label for="Number"><i class="fa-solid fa-user"></i> Your last name</label>
+      <input type="text" id="last name" placeholder="Your last name...">
+    </div>
+    <div class="input-group">
+      <label for="number"><i class="fa-solid fa-phone"></i> Number</label>
+      <input type="text" id="number" placeholder="Number...">
+    </div>
+
+    <div class="input-group">
+      <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+      <input type="text" id="email" placeholder="Your Email Id...">
+    </div>
+    <div class="input-group">
+      <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
+      <input type="password" id="password" placeholder="Password...">
+    </div>
+
+
+    <!-- <fieldset>
+        <dj>choose your langauge</dj>
+        <div class="input-group">
+          <input type="checkbox" id="html" checked />
+          <label for="html">html</label>
+        </div>
+
+        <div class="input-group">
+          <input type="checkbox" id="css" checked />
+          <label for="css">css</label>
+        </div>
+      </fieldset> -->
+    <div class="input-group">
+      <label for="file"><i class="fa-solid fa-image"></i> choose a picture</label>
+      <input type="file" id="file">
+    </div>
+
+    <div class="input-group">
+      <label for="meeting-time"><i class="fa-solid fa-clock"></i> choose a time for class</label>
+      <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00"
+        max="2023-06-14T00:00" />
+    </div>
+    <div class="input-group">
+      <label for="url"><i class="fa-solid fa-link"></i> enter an https://url:</label>
+      <input type="url" id="url" placeholder="https|://example.com" pattern="https://.*" size="20" required />
+    </div>
+
+    <div class="input-group">
+      <label for="select"><i class="fa-solid fa-language"></i> choose a language</label>
+      <select type="select" id="picture">
+        <option value="">--please choose an option--</option>
+        <option value="html">html</option>
+        <option value="css">css</option>
+        <option value="java script">java script</option>
+        <option value="c">C</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="html">HTML</label>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="css">CSS</label>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="javascript">JavaScript</label>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    </div>
+
+    <div class="input-group">
+      <p><label for="feedback"><i class="fa-solid fa-message"></i> feedback</label></p>
+      <textarea id="feedback" cols="30" rows="10" maxlength="100"></textarea>
+    </div>
+    <div class="input-group">
+      <button><i class="fa-solid fa-paper-plane"></i>  Submit</button>
+    </div>
+  </form>
+</body>
+
+</html>
